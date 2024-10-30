@@ -2,6 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: mysql-initdb-config
+  namespace: task-list
 data:
   init.sql: |
     CREATE DATABASE IF NOT EXISTS mydb;
